@@ -55,7 +55,7 @@ body {
 
 .card__front {
   position: absolute;
-  background: rgb(19, 152, 235);
+  background: rgb(12, 12, 14);
   color: #fff;
   font-weight: 600;
 }
@@ -67,14 +67,28 @@ body {
   justify-items: center;
 }
 
-.card__question {
-  margin-top: 20vh;
+#title {
   transform: translateZ(300px);
+  border: solid 2px #fff;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 800;
+  top: 6vh;
+  left: 34%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card__question {
+  margin-top: 23vh;
+  transform: translateZ(200px);
+  text-decoration: underline;
 }
 
 .card__subtitle {
   margin-top: 10vh;
-  transform: translateZ(200px);
+  transform: translateZ(100px);
   font-size: 1.4rem;
 }
 
@@ -83,7 +97,7 @@ body {
   position: absolute;
 
   font-size: 2.2rem;
-  color: #000;
+  color: rgb(12, 11, 11);
   font-weight: 900;
 }
 
