@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  background: url("images/RenéCoty.jpg");
+
+  font-family: "Dancing Script", cursive;
+}
+.card {
+  width: 400px;
+}
+
+.card:hover .card__content {
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  transition: transform 3s;
+  position: relative;
+  text-align: center;
+  padding: 30vh;
+  transform-style: preserve-3d;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.card__front {
+  position: absolute;
+  background: rgb(19, 152, 235);
+  color: #fff;
+  font-weight: 600;
+}
+
+.card__back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.card__question {
+  margin-top: 20vh;
+  transform: translateZ(300px);
+}
+
+.card__subtitle {
+  margin-top: 10vh;
+  transform: translateZ(200px);
+  font-size: 1.4rem;
+}
+
+.card__response {
+  transform: translateZ(100px);
+  position: absolute;
+
+  font-size: 2.2rem;
+  color: #000;
+  font-weight: 900;
+}
+
+#left-arrow {
+  position: absolute;
+  top: 45%;
+  left: 0.2vw;
+  cursor: pointer;
+  border: 20px solid;
+  border-color: transparent lightblue transparent transparent;
+}
+#right-arrow {
+  position: absolute;
+  top: 45%;
+  right: 0.2vw;
+  cursor: pointer;
+  border: 20px solid;
+  border-color: transparent transparent transparent lightblue;
+}
+
+#card1 {
+  background: url("images/leHavre.jpg");
+  background-size: cover;
+}
+#card2 {
+  background: url("images/Elysee.jpg");
+  background-size: cover;
+}
+#card3 {
+  background: url("images/Germaine.jpg");
+  background-size: cover;
+  background-position-x: right;
+}
+#card4 {
+  background: url("images/palaisJustice.jpg");
+  background-size: cover;
+}
+#card5 {
+  background: url("images/toiMemeTuSais.jpg");
+  background-size: cover;
+}
