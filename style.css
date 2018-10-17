@@ -23,6 +23,7 @@ body {
   justify-items: center;
   overflow: hidden;
   background: url("images/RenéCoty.jpg");
+  background-size: cover;
 
   font-family: "Dancing Script", cursive;
 }
